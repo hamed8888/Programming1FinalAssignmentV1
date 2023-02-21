@@ -1,26 +1,60 @@
-research Questions:
+Programming 1 Final Assignment
 
-In this analysis we try to find if is there a relation between age, sex, income level and depression level,
-how does it changed from 2014 to 2019, and what is the geopraphical span and severity of this depression among countries. 
-there is a hypothesis that as income decreases, depression level will increase.
+About the Project:
 
-In addition (using second dataset) we search to find if is there a relation between age, sex, education level and depression level, 
-how does it changed from 2014 to 2019 and look at its geopraphical span and severity. 
-the hypothesis here is that as we see an increase in education level, depression values will decrease.
+In this Project, we try to find if is there a relation between age, sex, income level, and depression level,
+and what is the geographical span and severity of this depression among countries. 
+it is expected that as income decreases, depression levels will increase.
 
-After doing these preparatory analysis on the tow datasets we reach to the research question 
-which is checking for a given depression level how income and education change? in other word 
-we try to see if is there a relation between income and education (direct or indirect relation) for a specific value of depression?
-to do this we categorized values of depression rates and for each year, 2014 and 2019, extractd a dataframe including 
-depression and income levels in a row to check possible relations. the results are shown.
+In addition (using the second dataset) we search to find if is there a relation between age, sex, education level, and depression level 
+and look at its geographical span and severity. 
+here expectation is that as we see an increase in education level, depression values will decrease.
+
+After doing these preparatory analyses on the two datasets we reach the research question 
+which is checking for a given depression level how income and education change. in another word 
+we try to see if is there a relation between income and education (direct or reverse relation) for a specific value of depression.
+the hypothesis is that for a given value of depression, for same person sex, from the same age group and country as one of education 
+or income increases, the other increases as well.
+to do this we categorized (rounded) values of depression rates and for each year, 2014 and 2019, extracted a data frame including 
+depression, income, and ds levels in a row to check possible relations. the question is answered with regression analysis for both of the
+years.
+
+Built With:
+    - Python 3.9.13
+
+dependencies and installation:
+1- install these libraries using the terminal command line:
+    - pip install bokeh
+    - pip install folium
+    - pip install pycountry
+    - pip install plotly-express
+2- download first datasource (Current depressive symptoms by sex, age, and educational attainment level) 
+    preferably in .tsv format from  
+    https://ec.europa.eu/eurostat/databrowser/view/hlth_ehis_mh1e$DV_463/default/table?lang=en and set its address 
+    in the config file (key in the config file: DepressionByEducationLevel) 
+3- download the second data source (Current depressive symptoms by sex, age, and educational income quintile)
+    preferably in .tsv format from 
+    https://ec.europa.eu/eurostat/databrowser/view/hlth_ehis_mh1e$DV_464/default/table?lang=en and set its address 
+    in the config file (key in the config file: DepressionByIncomeLevel) 
+4- download world-countries.json from https://www.kaggle.com/datasets/ktochylin/world-countries and set its address 
+    in the config file (key in the config file: world-countries)
+5- run the project
 
 About the Data:
 
-First dataset (DepressionByEducationLevel) contains percentages of depression symptoms among people of different education levels
-for a number of european countries. The second dataset (DepressionByIncomeLevel) shows again the percentages of depression symptoms 
-for different income levels. both of datasets include data of two different years(2014 and 2019) and included with age and sex of the 
+The first dataset (Current depressive symptoms by sex, age, and educational attainment level) contains percentages of depression symptoms among people of different education levels
+in a number of European countries. The second dataset (Current depressive symptoms by sex, age, and income quintile) shows again the percentages of depression symptoms 
+for different income levels. both datasets include data from two different years(2014 and 2019) and included with age and sex of the 
 participants. 
 
 Data Sources:
-statistic data for depression: https://ec.europa.eu/eurostat/cache/metadata/en/hlth_det_esms.htm
-countries geojson source: https://www.kaggle.com/datasets/ktochylin/world-countries
+1- Current depressive symptoms by sex, age, and educational attainment level:
+https://ec.europa.eu/eurostat/databrowser/view/hlth_ehis_mh1e$DV_463/default/table?lang=en
+2- Current depressive symptoms by sex, age, and income quintile:
+https://ec.europa.eu/eurostat/databrowser/view/hlth_ehis_mh1i$DV_464/default/table?lang=en
+
+countries geojson source: 
+https://www.kaggle.com/datasets/ktochylin/world-countries
+
+License:
+Distributed under the Mozilla license. See LICENSE for more information.
