@@ -23,22 +23,24 @@ Built With:
     - Python 3.9.13
 
 dependencies and installation:
-1- install these libraries using the terminal command line:
+
+1- download the source from github repository
+2- install these libraries using the terminal command line:
     - pip install bokeh
     - pip install folium
     - pip install pycountry
     - pip install plotly-express
-2- download first datasource (Current depressive symptoms by sex, age, and educational attainment level) 
+3- download first datasource (Current depressive symptoms by sex, age, and educational attainment level) 
     preferably in .tsv format from  
     https://ec.europa.eu/eurostat/databrowser/view/hlth_ehis_mh1e$DV_463/default/table?lang=en and set its address 
     in the config file (key in the config file: DepressionByEducationLevel) 
-3- download the second data source (Current depressive symptoms by sex, age, and educational income quintile)
+4- download the second data source (Current depressive symptoms by sex, age, and educational income quintile)
     preferably in .tsv format from 
     https://ec.europa.eu/eurostat/databrowser/view/hlth_ehis_mh1e$DV_464/default/table?lang=en and set its address 
     in the config file (key in the config file: DepressionByIncomeLevel) 
-4- download world-countries.json from https://www.kaggle.com/datasets/ktochylin/world-countries and set its address 
+5- download world-countries.json from https://www.kaggle.com/datasets/ktochylin/world-countries and set its address 
     in the config file (key in the config file: world-countries)
-5- run the project
+6- run the project
 
 About the Data:
 
@@ -48,6 +50,7 @@ for different income levels. both datasets include data from two different years
 participants. 
 
 Data Sources:
+
 1- Current depressive symptoms by sex, age, and educational attainment level:
 https://ec.europa.eu/eurostat/databrowser/view/hlth_ehis_mh1e$DV_463/default/table?lang=en
 2- Current depressive symptoms by sex, age, and income quintile:
