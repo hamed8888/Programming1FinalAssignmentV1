@@ -30,16 +30,14 @@ dependencies and installation:
     - pip install folium
     - pip install pycountry
     - pip install plotly-express
-3- download first datasource (Current depressive symptoms by sex, age, and educational attainment level) 
-    preferably in .tsv format from  
-    https://ec.europa.eu/eurostat/databrowser/view/hlth_ehis_mh1e$DV_463/default/table?lang=en and set its address 
-    in the config file (key in the config file: DepressionByEducationLevel) 
-4- download the second data source (Current depressive symptoms by sex, age, and educational income quintile)
-    preferably in .tsv format from 
-    https://ec.europa.eu/eurostat/databrowser/view/hlth_ehis_mh1e$DV_464/default/table?lang=en and set its address 
-    in the config file (key in the config file: DepressionByIncomeLevel) 
-5- download world-countries.json from https://www.kaggle.com/datasets/ktochylin/world-countries and set its address 
-    in the config file (key in the config file: world-countries)
+3- download datasource number 1 (Current depressive symptoms by sex, age, and educational attainment level) 
+    preferably in .tsv format from given url (https://ec.europa.eu/eurostat/databrowser/view/hlth_ehis_mh1e$DV_463/default/table?lang=en)
+    and set its address in the config file (key in the config file: DepressionByEducationLevel) 
+4- download datasource number 2 (Current depressive symptoms by sex, age, and educational income quintile)
+    preferably in .tsv format from given url(https://ec.europa.eu/eurostat/databrowser/view/hlth_ehis_mh1e$DV_464/default/table?lang=en)
+    and set its address in the config file (key in the config file: DepressionByIncomeLevel) 
+5- download world-countries.json from given url (https://www.kaggle.com/datasets/ktochylin/world-countries)
+    and set its address in the config file (key in the config file: world-countries)
 6- run the project
 
 About the Data:
